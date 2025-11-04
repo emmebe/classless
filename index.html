@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Neon Grimoire — 1980s Dark Fantasy</title>
+  <style>
+    :root{--bg:#070308;--muted:#9a9a9a;--neon1:#9cf;--neon2:#ff5bd6;--paper:#e6e2ff}
+    html,body{height:100%}
+    body{background:var(--bg);color:var(--paper);font-family:"Garamond","Palatino Linotype","Times New Roman",serif;margin:0;padding:2rem}
+    .container{max-width:980px;margin:0 auto;padding:2rem;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);box-shadow:0 8px 40px rgba(0,0,0,0.7),0 0 40px rgba(120,0,140,0.06) inset}
+    h1,h2,h3{text-transform:uppercase;letter-spacing:2px;text-shadow:0 0 10px rgba(140,40,140,0.85)}
+    h1{font-size:2.6rem;color:var(--neon2);margin:0 0 .6rem}
+    h2{font-size:1.45rem;color:var(--neon1);margin-top:1.1rem}
+    h3{font-size:1.05rem;color:#ffb3e6;margin:.6rem 0}
+    p{line-height:1.45;color:#dcd6ff}
+    section{background:linear-gradient(180deg,rgba(12,6,15,0.45),rgba(8,4,12,0.25));padding:1rem;border-radius:8px;margin:.9rem 0;border:1px solid rgba(255,255,255,0.03)}
+    .form-input{display:flex;gap:.6rem;align-items:center}
+    label{min-width:8rem;color:#c8b6ff}
+    input[type="text"],input[type="email"]{background:#0b0510;border:1px solid #4b224a;color:var(--paper);padding:.55rem .7rem;border-radius:4px;box-shadow:0 0 12px rgba(140,20,140,0.12);outline:none}
+    input[type="submit"]{background:linear-gradient(90deg,var(--neon2),var(--neon1));color:#0a0010;border:none;padding:.55rem .85rem;border-radius:4px;cursor:pointer;font-weight:700}
+    ul,ol{margin-left:1.1rem}
+    table{width:100%;border-collapse:collapse;margin-top:.8rem;background:rgba(255,255,255,0.01)}
+    th,td{border:1px solid rgba(255,255,255,0.04);padding:.5rem;text-align:left}
+    caption{caption-side:top;text-align:left;padding-bottom:.4rem;color:#bfb}
+    footer{font-size:.85rem;color:var(--muted);margin-top:.9rem;border-top:1px dashed rgba(255,255,255,0.03);padding-top:.6rem}
+    .neon{color:var(--neon1);text-shadow:0 0 10px var(--neon1),0 0 28px rgba(155,255,255,0.06)}
+    .small{font-size:.95rem;color:#c7c3e6}
+    @media (max-width:600px){h1{font-size:1.8rem}label{min-width:6rem}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="neon">The Neon Grimoire</h1>
+    <p class="small">A short journal recovered from a forgotten arcade: synths, static, and sigils. This page is an aesthetic sample of 1980s dark-fantasy — neon and velvet, scratches on celluloid and a whisper of magic.</p>
+
+    <section>
+      <h2>Whispers from the Arcane Arcade</h2>
+      <p>Between the glow of cathode and cassette, merchants traded spells as if they were high scores. A modern-day codex, handwritten in type and pulse.</p>
+      <h3>Notable Rites</h3>
+      <ol>
+        <li>Summon the <cite>Cassette Oracle</cite> at dusk.</li>
+        <li>Light a neon candle to bridge analog and ethereal.</li>
+        <li>Recite the three byte-bound incantations quietly.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Register Your Name</h2>
+      <form action="#" method="post" aria-label="Grimoire registration">
+        <div class="form-input">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="e.g., Elara Night" required>
+        </div>
+        <div class="form-input" style="margin-top:.5rem">
+          <label for="email">Sigil (email)</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.tld">
+        </div>
+        <div style="margin-top:.7rem">
+          <input type="submit" value="Bind">
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <h2>Relics &amp; Rites</h2>
+      <p class="small">A partial inventory, culled from back alleys and the broken cabinets of neon parlors.</p>
+      <ul>
+        <li>Crystal Walkman</li>
+        <li>Arc-lit Cloak</li>
+        <li>Phantom Joystick</li>
+      </ul>
+
+      <h3>Treasury</h3>
+      <table role="table" aria-label="Relic ledger">
+        <caption>A ledger of relics and their rumor value</caption>
+        <thead>
+          <tr><th>Relic</th><th>Origin</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Crystal Walkman</td><td>East Vault</td><td>7 moons</td></tr>
+          <tr><td>Arc-lit Cloak</td><td>Fallen Theatre</td><td>12 moons</td></tr>
+          <tr><td>Phantom Joystick</td><td>Neon Arcade</td><td>4 moons</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Further Reading</h2>
+      <p>For a concise primer, see <cite>Neon Necromancy: An Illustrated Primer</cite> — a small booklet found under the third floorboards of the Emporium.</p>
+    </section>
+
+    <footer>
+      <p>© 198X — The Neon Grimoire. Manifesto composed with reverence and reel-to-reel static.</p>
+    </footer>
+  </div>
+</body>
+</html>
